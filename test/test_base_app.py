@@ -2,7 +2,8 @@
 
 import pytest
 
-from app import base_app
+from test_repo.app import base_app
+
 
 def add(a: int, b: int) -> int: return a + b
 def div(a: int, b: int) -> int: return a // b
