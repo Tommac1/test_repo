@@ -21,3 +21,7 @@ class TestApp:
         app = base_app.BaseApp(2, 0)
         with pytest.raises(ZeroDivisionError):
             app.do_action(div)
+
+    def test_fail(self):
+        app = base_app.BaseApp()
+        assert app.do_action(add) != 0  # Should fail.
